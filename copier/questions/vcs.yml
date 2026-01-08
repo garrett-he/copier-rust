@@ -1,0 +1,10 @@
+---
+init_git:
+  type: bool
+  help: "Initialize a git repository?"
+  default: true
+
+vcs_github_path:
+  type: str
+  help: "Path of repository on github:"
+  default: "{{ copyright_holder_name.lower().replace(' ', '-') }}/{{ project_name }}"

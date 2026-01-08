@@ -1,0 +1,16 @@
+//! {{ project_description }}
+
+/// Greets the world.
+pub fn greeting() {
+    println!("Hello, world");
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_greeting() {
+        greeting();
+    }
+}
